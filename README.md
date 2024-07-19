@@ -25,5 +25,5 @@ Game Over - Done
 Fill free to ask for other features.
 
 Future Features:
-Database connected for score and username records.
+Database connection for score and username records.
 Improve image or used UI graphics
