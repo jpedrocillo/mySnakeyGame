@@ -6,22 +6,24 @@ There are images i used on the project that i think i have downloaded somewhere 
 My Code is still messy lols. No one force you to look at it lols.
 
 Target Features:
-Snake Canvas Board
-Snake Control
-Snake Size
-Score
-High Score
-High Score Random Message
-Food
-Food Position
-Food Color
-Food Image
-Changing Background color based on Food
-Changing Snake color based on Food
-Restart Game
-Paused Game
-Game Over
+Snake Canvas Board - Done
+Snake Control - Done
+Snake Size - Done
+Score - Done
+High Score - Done
+High Score Random Message - Done
+Food - Done
+Food Position - Done
+Food Color - Done
+Food Image - Done
+Changing Background color based on Food - Done
+Changing Snake color based on Food - Done
+Restart Game - Done
+Paused Game - Done
+Game Over - Done
 
 Fill free to ask for other features.
 
-Future Features Database connected for score and username records.
+Future Features:
+Database connected for score and username records.
+Improve image or used UI graphics

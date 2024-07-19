@@ -1,0 +1,219 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  text-align: center;
+  background: #80b4bd;
+  background: radial-gradient(circle, #80b4bd 0%, rgba(177,166,220,1) 50%, #98d6e1 100%);
+  min-height: 100vh;
+  cursor: url(img/bill1.png), auto !important;
+  transition: background 1000ms linear;
+}
+
+#gameContainer {
+  text-align: center;
+  padding-top: 14em;
+  width: 1200px;
+}
+
+#gameBoard {
+  border: 3px solid #222222;
+  border-radius: 10px;
+  box-shadow: 40px 40px 82px #143441;
+  background-color: #ffffff;
+}
+
+#scoretext, #highScoreText {
+  color: red;
+  padding: 2px 10px;
+  display: inline-block;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 2px;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.flex-container div {
+  width: 30%;
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.box div {
+  width: 5em;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+#resetBtn {
+  cursor: url(img/bill2.png), pointer !important;
+}
+
+.voltage-button {
+  position: relative;
+}
+
+.voltage-button button {
+  color: white;
+  border-radius: 5em;
+  background: linear-gradient(315deg, #68b0bd, #7cd2e1);
+  padding: 0.8rem;
+  border-radius: 5rem;
+  border: 2px solid #aaacb4;
+  font-size: 0.8rem;
+  line-height: 0.4em;
+  letter-spacing: 0.075em;
+  transition: background 0.1s;
+}
+
+.voltage-button button:hover {
+  cursor: pointer;
+  background: linear-gradient(315deg, #52b1c2, #61d3e6);
+}
+
+.voltage-button button:hover + svg, .voltage-button button:hover + svg + .dots {
+  opacity: 1;
+}
+
+.voltage-button svg {
+  display: block;
+  position: absolute;
+  top: -0.75em;
+  left: -0.25em;
+  width: calc(100% + 1.2em);
+  height: calc(100% + 1.4em);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.1s;
+}
+
+.voltage-button svg path {
+  stroke-dasharray: 100;
+  filter: url("#glow");
+}
+
+.voltage-button svg path.line-1 {
+  stroke: #19b5d1;
+  stroke-dashoffset: 0;
+  animation: spark-1 2s linear infinite;
+}
+
+.voltage-button svg path.line-2 {
+  stroke: #25ffff;
+  stroke-dashoffset: 500;
+  animation: spark-2 2s linear infinite;
+}
+
+.voltage-button .dots {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.4s;
+}
+
+.voltage-button .dots .dot {
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.voltage-button .dots .dot-1 {
+  top: 0;
+  left: 20%;
+  animation: fly-up 3s linear infinite;
+}
+
+.voltage-button .dots .dot-2 {
+  top: 0;
+  left: 55%;
+  animation: fly-up 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.voltage-button .dots .dot-3 {
+  top: 0;
+  left: 80%;
+  animation: fly-up 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.voltage-button .dots .dot-4 {
+  bottom: 0;
+  left: 30%;
+  animation: fly-down 3s linear infinite;
+  animation-delay: 2.5s;
+}
+
+.voltage-button .dots .dot-5 {
+  bottom: 0;
+  left: 65%;
+  animation: fly-down 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes spark-1 {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+@keyframes spark-2 {
+  to {
+    stroke-dashoffset: -500;
+  }
+}
+@keyframes fly-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.2);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(-1.5rem) scale(0.4);
+  }
+  10%, 100% {
+    opacity: 0;
+    transform: translateY(-3rem) scale(0.2);
+  }
+}
+@keyframes fly-down {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.2);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(1.5rem) scale(0.4);
+  }
+  10%, 100% {
+    opacity: 0;
+    transform: translateY(3rem) scale(0.2);
+  }
+}/*# sourceMappingURL=snake.css.map */
